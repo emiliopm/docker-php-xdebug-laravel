@@ -6,6 +6,18 @@ https://medium.com/@murilolivorato/setting-up-a-laravel-development-environment-
 ## Basado en el proyecto de Github
 https://github.com/murilolivorato/laravel_docker_enviroment
 
+## Importante
+Antes de comenzar, debes de poner tus usuarios y contraseñas en los ficheros:
+- docker-compose.yaml
+      - PMA_HOST=mysql
+      - PMA_USER=root
+      - PMA_PASSWORD=rootpassword
+- mysql\.env
+      - MYSQL_USER=mysqluser
+      - MYSQL_PASSWORD=mysqlpassword
+      - MYSQL_ROOT_PASSWORD=rootpassword
+      - MYSQL_DATABASE=databasename
+
 ## Ejecutar los siguientes comandos para crear un nuevo proyecto
 - docker-compose up -d --build
 - docker-compose run --rm composer create-project laravel/laravel:8.* project_name
