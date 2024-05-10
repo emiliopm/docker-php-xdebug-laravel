@@ -26,6 +26,7 @@ Antes de comenzar, debes de poner tus usuarios y contraseñas en los ficheros:
       - DB_PASSWORD=mysqlpassword
 ## Ejecutar los siguientes comandos para tener el proyecto de Laravel funcionando con Docker
 - docker-compose up -d --build
+- docker-compose run --rm composer update
 
 
 ## Entramos en el proyecto con el navegador web
