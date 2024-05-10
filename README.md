@@ -6,8 +6,16 @@ https://medium.com/@murilolivorato/setting-up-a-laravel-development-environment-
 ## Basado en el proyecto de Github
 https://github.com/murilolivorato/laravel_docker_enviroment
 
-## Ejecutar los siguientes comandos para comenzar tu proyecto.
+## Ejecutar los siguientes comandos para crear un nuevo proyecto
 - docker-compose up -d --build
 - docker-compose run --rm composer create-project laravel/laravel:8.* project_name
-- docker-compose run --rm composer install
-- docker-compose run --rm artisan key:generate
+
+## Pasos de configuración del entorno
+Una vez tenemos creado el proyecto, necesitamos que se encuentre en la carpeta SRC.
+
+Por ello, debemos mover el proyecto que se encuentra en la carpeta "src\project_name" hacia la carpeta "src"
+
+Una vez realizada esta tarea, ya podemos acceder a Laravel a través del puerto 8080
+
+http://localhost:8080/
+
