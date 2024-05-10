@@ -61,7 +61,7 @@ services:
     environment:
       - PMA_HOST=mysql
       - PMA_USER=root
-      - PMA_PASSWORD=abatic
+      - PMA_PASSWORD=rootpassword
     networks:
       - laravel_enviroment
   redis:
