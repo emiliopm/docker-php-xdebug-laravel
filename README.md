@@ -19,7 +19,17 @@ Una vez realizada esta tarea, ya podemos acceder a Laravel a través del puerto 
 
 http://localhost:8080/
 
+## Configuración acceso base de datos desde Laravel
 
+Accedemos al fichero src\.env 
+Y actualizamos los siguientes valores
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=databasename
+DB_USERNAME=mysqluser
+DB_PASSWORD=mysqlpassword
 
 ## Otros comandos útiles
 
