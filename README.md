@@ -19,3 +19,15 @@ Una vez realizada esta tarea, ya podemos acceder a Laravel a través del puerto 
 
 http://localhost:8080/
 
+
+
+## Otros comandos útiles
+
+Comando para actualizar un proyecto ya existente.
+docker-compose run --rm composer update
+
+Comando para ejecutar las tareas programadas de Laravel
+docker-compose run --rm artisan schedule:run
+
+Comando para importar una copia de seguridad de mysql
+mysql -u root -p databasename -v --ssl-mode=disabled < "backup.sql"
