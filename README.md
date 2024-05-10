@@ -17,17 +17,19 @@ Antes de comenzar, debes de poner tus usuarios y contraseñas en los ficheros:
       - MYSQL_PASSWORD=mysqlpassword
       - MYSQL_ROOT_PASSWORD=rootpassword
       - MYSQL_DATABASE=databasename
-
-## Ejecutar los siguientes comandos para crear un nuevo proyecto
+- src\.env
+      - DB_CONNECTION=mysql
+      - DB_HOST=127.0.0.1
+      - DB_PORT=3306
+      - DB_DATABASE=databasename
+      - DB_USERNAME=mysqluser
+      - DB_PASSWORD=mysqlpassword
+## Ejecutar los siguientes comandos para tener el proyecto de Laravel funcionando con Docker
 - docker-compose up -d --build
-- docker-compose run --rm composer create-project laravel/laravel:8.* project_name
 
-## Pasos de configuración del entorno
-Una vez tenemos creado el proyecto, necesitamos que se encuentre en la carpeta SRC.
 
-Por ello, debemos mover el proyecto que se encuentra en la carpeta "src\project_name" hacia la carpeta "src"
-
-Una vez realizada esta tarea, ya podemos acceder a Laravel a través del puerto 8080
+## Entramos en el proyecto con el navegador web
+Ya podemos acceder a Laravel a través del puerto 8080
 
 http://localhost:8080/
 
@@ -36,12 +38,6 @@ http://localhost:8080/
 Accedemos al fichero src\.env 
 Y actualizamos los siguientes valores
 
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=databasename
-DB_USERNAME=mysqluser
-DB_PASSWORD=mysqlpassword
 
 ## Otros comandos útiles
 
